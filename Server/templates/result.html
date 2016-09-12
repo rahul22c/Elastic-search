@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script type="text/javascript">
+    var data = {{name|tojson|safe}}; 
+    i=0;
+    while(data.hits.hits[i]._source.name)   
+ { document.write('<h1>');
+  document.write( data.hits.hits[i]._source.name);
+   document.write('</h1>');
+
+  var r= (data.hits.hits[i]._source.name).toString();
+    var b ='/files/1902';
+    newlink = document.createElement('a');
+    newlink.innerHTML = (r);
+    newlink.setAttribute('title', 'Google');
+    newlink.setAttribute('href', b.replace('1902',r));
+    document.body.appendChild(newlink);
+    i++;
+  }  
+</script>
+
+
+
+</body>
+</html>
