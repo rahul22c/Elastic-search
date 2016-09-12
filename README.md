@@ -3,3 +3,5 @@ Hands on elastic search
 
 Working on application of elastic search. 
 
+Using python client for elastic search
+
